@@ -3,13 +3,13 @@
   "elmType": "div",
   "style": {
     "color": "#ffffff",
-    "background-color": "=if(@currentField == '', 'transparent', if(floor((Number(@currentField) - Number(@now)) / 86400000) < 14, '#c0392b', if(floor((Number(@currentField) - Number(@now)) / 86400000) <= 30, '#c77f0a', '#107c10')))",
+    "background-color": "=if(Number(@currentField) < 946684800000, 'transparent', if(floor((Number(@currentField) - Number(@now)) / 86400000) < 14, '#c0392b', if(floor((Number(@currentField) - Number(@now)) / 86400000) <= 30, '#c77f0a', '#107c10')))",
     "border-radius": "12px",
     "padding": "3px 10px",
     "font-weight": "600",
     "text-align": "center",
     "white-space": "nowrap",
-    "display": "=if(@currentField == '', 'none', 'inline-block')"
+    "display": "=if(Number(@currentField) < 946684800000, 'none', 'inline-block')"
   },
-  "txtContent": "=if(@currentField == '', '', toLocaleDateString(@currentField) + '  |  ' + if(floor((Number(@currentField) - Number(@now)) / 86400000) < 0, 'Overdue ' + (0 - floor((Number(@currentField) - Number(@now)) / 86400000)) + 'd', 'In ' + floor((Number(@currentField) - Number(@now)) / 86400000) + 'd'))"
+  "txtContent": "=if(Number(@currentField) < 946684800000, '', toLocaleDateString(@currentField) + '  |  ' + if(floor((Number(@currentField) - Number(@now)) / 86400000) < 0, 'Overdue ' + (0 - floor((Number(@currentField) - Number(@now)) / 86400000)) + 'd', 'In ' + floor((Number(@currentField) - Number(@now)) / 86400000) + 'd'))"
 }
