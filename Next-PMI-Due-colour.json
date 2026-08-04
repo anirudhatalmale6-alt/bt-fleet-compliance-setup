@@ -4,11 +4,12 @@
   "style": {
     "color": "#ffffff",
     "background-color": "=if(@currentField == '', 'transparent', if(floor((Number(@currentField) - Number(@now)) / 86400000) < 7, '#c0392b', if(floor((Number(@currentField) - Number(@now)) / 86400000) <= 14, '#c77f0a', '#107c10')))",
-    "border-radius": "14px",
-    "padding": "3px 12px",
+    "border-radius": "12px",
+    "padding": "3px 10px",
     "font-weight": "600",
     "text-align": "center",
+    "white-space": "nowrap",
     "display": "=if(@currentField == '', 'none', 'inline-block')"
   },
-  "txtContent": "=if(@currentField == '', '', if(floor((Number(@currentField) - Number(@now)) / 86400000) < 0, 'Overdue ' + (0 - floor((Number(@currentField) - Number(@now)) / 86400000)) + 'd', 'In ' + floor((Number(@currentField) - Number(@now)) / 86400000) + 'd'))"
+  "txtContent": "=if(@currentField == '', '', toLocaleDateString(@currentField) + '  |  ' + if(floor((Number(@currentField) - Number(@now)) / 86400000) < 0, 'Overdue ' + (0 - floor((Number(@currentField) - Number(@now)) / 86400000)) + 'd', 'In ' + floor((Number(@currentField) - Number(@now)) / 86400000) + 'd'))"
 }
