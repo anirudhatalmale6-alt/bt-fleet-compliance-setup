@@ -1,0 +1,34 @@
+{
+  "type": "Table",
+  "inputs": {
+    "from": "@outputs('Get_items')?['body/value']",
+    "format": "HTML",
+    "columns": [
+      {
+        "header": "Registration",
+        "value": "@item()?['Title']"
+      },
+      {
+        "header": "Operator",
+        "value": "@item()?['Operator']"
+      },
+      {
+        "header": "Make/ Model",
+        "value": "@item()?['Make_x002f_Model']"
+      },
+      {
+        "header": "PMI Due",
+        "value": "@if(empty(item()?['Next_x0020_PMI_x0020_Due']),'',concat(if(less(div(sub(ticks(item()?['Next_x0020_PMI_x0020_Due']),ticks(utcNow())),864000000000),0),'!O!',if(less(div(sub(ticks(item()?['Next_x0020_PMI_x0020_Due']),ticks(utcNow())),864000000000),7),'!R!',if(less(div(sub(ticks(item()?['Next_x0020_PMI_x0020_Due']),ticks(utcNow())),864000000000),14),'!A!','!G!'))),formatDateTime(item()?['Next_x0020_PMI_x0020_Due'],'dd/MM/yyyy'),if(less(div(sub(ticks(item()?['Next_x0020_PMI_x0020_Due']),ticks(utcNow())),864000000000),0),' (OVERDUE)','')))"
+      },
+      {
+        "header": "Status",
+        "value": "@item()?['Status']?['Value']"
+      }
+    ]
+  },
+  "runAfter": {
+    "Get_items": [
+      "Succeeded"
+    ]
+  }
+}
