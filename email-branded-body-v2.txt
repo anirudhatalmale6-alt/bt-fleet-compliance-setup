@@ -1,0 +1,12 @@
+<div style="font-family:Arial,Helvetica,sans-serif;max-width:680px;margin:0 auto;border:1px solid #e5e8ec;border-radius:8px;overflow:hidden;">
+<div style="background:#071d3a;padding:18px 22px;border-bottom:3px solid #caa344;">
+<div style="color:#ffffff;font-size:18px;font-weight:700;">BT Transport Management</div>
+<div style="color:#caa344;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Daily Fleet Compliance Alert</div>
+</div>
+<div style="padding:20px 22px;">
+<p style="color:#26313f;font-size:14px;margin:0 0 6px;">Good morning,</p>
+<p style="color:#55606e;font-size:13px;line-height:1.5;margin:0 0 18px;">Here is today's fleet compliance summary from your BT Transport Management system. Any vehicle due soon should be booked in.</p>
+@{replace(replace(replace(replace(replace(replace(replace(replace(replace(body('Create_HTML_table'),'<table>','<table style="border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:13px;">'),'<th>','<th style="background:#071d3a;color:#ffffff;text-align:left;padding:9px 10px;border:1px solid #0d264a;font-size:12px;">'),'<td>','<td style="padding:8px 10px;border:1px solid #e5e8ec;color:#26313f;">'),'Active</td>','<span style="color:#107c10;font-weight:700;">Active</span></td>'),'VOR</td>','<span style="color:#c0392b;font-weight:700;">VOR</span></td>'),'">!O!',';background:#fdecea;color:#c0392b;font-weight:700;">'),'">!R!',';background:#fdecea;color:#c0392b;font-weight:700;">'),'">!A!',';background:#fff6e5;color:#a06a00;font-weight:700;">'),'">!G!',';color:#107c10;font-weight:600;">')}
+<p style="color:#93a1af;font-size:11px;margin:20px 0 0;">Automated daily reminder from your BT Transport Management Compliance System &middot; Every item is backed by its certificate on the vehicle's record.</p>
+</div>
+</div>
