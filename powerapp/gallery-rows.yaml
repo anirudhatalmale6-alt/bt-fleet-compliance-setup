@@ -1,0 +1,104 @@
+- rowReg:
+    Control: Label@2.5.1
+    Properties:
+      Text: =ThisItem.Registration
+      X: =16
+      Y: =8
+      Width: =200
+      Height: =28
+      Size: =13
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(7, 29, 58, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowFleet:
+    Control: Label@2.5.1
+    Properties:
+      Text: =ThisItem.'Fleet Number'
+      X: =216
+      Y: =8
+      Width: =140
+      Height: =28
+      Size: =13
+      Color: =RGBA(45, 58, 82, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowMake:
+    Control: Label@2.5.1
+    Properties:
+      Text: =ThisItem.'Make/ Model'
+      X: =356
+      Y: =8
+      Width: =260
+      Height: =28
+      Size: =13
+      Color: =RGBA(45, 58, 82, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowOp:
+    Control: Label@2.5.1
+    Properties:
+      Text: =ThisItem.Operator
+      X: =616
+      Y: =8
+      Width: =280
+      Height: =28
+      Size: =13
+      Color: =RGBA(45, 58, 82, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowPmi:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days), "dd/mm/yyyy") & If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) < Today(), "  OVERDUE", "")
+      X: =896
+      Y: =8
+      Width: =220
+      Height: =28
+      Size: =13
+      FontWeight: =FontWeight.Bold
+      Color: =If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) < Today(), RGBA(192, 57, 43, 1), If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) <= DateAdd(Today(), 14, Days), RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowStatus:
+    Control: Label@2.5.1
+    Properties:
+      Text: =ThisItem.Status.Value
+      X: =1116
+      Y: =8
+      Width: =150
+      Height: =28
+      Size: =13
+      FontWeight: =FontWeight.Bold
+      Color: =If(ThisItem.Status.Value = "VOR", RGBA(192, 57, 43, 1), RGBA(16, 124, 16, 1))
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- rowRule:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =43
+      Width: =1286
+      Height: =1
+      Fill: =RGBA(224, 230, 238, 1)
+      BorderThickness: =0
+      BorderColor: =RGBA(224, 230, 238, 1)
