@@ -1,0 +1,359 @@
+- hdrBar:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =0
+      Width: =1366
+      Height: =92
+      Fill: =RGBA(7, 29, 58, 1)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+- hdrTitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="BT TRANSPORT MANAGEMENT"
+      X: =40
+      Y: =16
+      Width: =700
+      Height: =34
+      Size: =22
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- hdrSub:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Fleet Compliance Dashboard"
+      X: =40
+      Y: =50
+      Width: =700
+      Height: =28
+      Size: =14
+      Color: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- hdrDate:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(Today(), "dd mmm yyyy")
+      X: =1000
+      Y: =34
+      Width: =326
+      Height: =28
+      Size: =14
+      Align: =Align.Right
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+- goldRule:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =92
+      Width: =1366
+      Height: =5
+      Fill: =RGBA(202, 163, 68, 1)
+      BorderThickness: =0
+      BorderColor: =RGBA(202, 163, 68, 1)
+- card1:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =40
+      Y: =128
+      Width: =310
+      Height: =112
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+- card1Value:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Vehicles))
+      X: =62
+      Y: =146
+      Width: =270
+      Height: =50
+      Size: =34
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(7, 29, 58, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card1Caption:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="VEHICLES ON FLEET"
+      X: =62
+      Y: =198
+      Width: =270
+      Height: =26
+      Size: =12
+      Color: =RGBA(85, 98, 122, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card2:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =370
+      Y: =128
+      Width: =310
+      Height: =112
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+- card2Value:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, DateAdd('Last PMI Date', 'PMI Frequency (Weeks)' * 7, Days) < Today())))
+      X: =392
+      Y: =146
+      Width: =270
+      Height: =50
+      Size: =34
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(192, 57, 43, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card2Caption:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="PMI OVERDUE"
+      X: =392
+      Y: =198
+      Width: =270
+      Height: =26
+      Size: =12
+      Color: =RGBA(85, 98, 122, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card3:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =700
+      Y: =128
+      Width: =310
+      Height: =112
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+- card3Value:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, DateAdd('Last PMI Date', 'PMI Frequency (Weeks)' * 7, Days) >= Today(), DateAdd('Last PMI Date', 'PMI Frequency (Weeks)' * 7, Days) <= DateAdd(Today(), 14, Days))))
+      X: =722
+      Y: =146
+      Width: =270
+      Height: =50
+      Size: =34
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(160, 106, 0, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card3Caption:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="PMI DUE WITHIN 14 DAYS"
+      X: =722
+      Y: =198
+      Width: =270
+      Height: =26
+      Size: =12
+      Color: =RGBA(85, 98, 122, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card4:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =1030
+      Y: =128
+      Width: =296
+      Height: =112
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+- card4Value:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, Status.Value = "VOR")))
+      X: =1052
+      Y: =146
+      Width: =256
+      Height: =50
+      Size: =34
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(85, 98, 122, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- card4Caption:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="OFF ROAD (VOR)"
+      X: =1052
+      Y: =198
+      Width: =256
+      Height: =26
+      Size: =12
+      Color: =RGBA(85, 98, 122, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- listTitle:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="VEHICLE REGISTER"
+      X: =40
+      Y: =264
+      Width: =400
+      Height: =30
+      Size: =15
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(7, 29, 58, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(255, 255, 255, 1)
+      PaddingLeft: =0
+- listHeadBar:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =40
+      Y: =300
+      Width: =1286
+      Height: =40
+      Fill: =RGBA(7, 29, 58, 1)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+- colReg:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="REGISTRATION"
+      X: =56
+      Y: =308
+      Width: =200
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- colFleet:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="FLEET NO"
+      X: =256
+      Y: =308
+      Width: =140
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- colMake:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="MAKE AND MODEL"
+      X: =396
+      Y: =308
+      Width: =260
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- colOp:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="OPERATOR"
+      X: =656
+      Y: =308
+      Width: =280
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- colPmi:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="NEXT PMI DUE"
+      X: =936
+      Y: =308
+      Width: =220
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
+- colStatus:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="STATUS"
+      X: =1156
+      Y: =308
+      Width: =150
+      Height: =24
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Color: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Fill: =RGBA(0, 0, 0, 0)
+      BorderThickness: =0
+      BorderColor: =RGBA(7, 29, 58, 1)
+      PaddingLeft: =0
