@@ -62,14 +62,14 @@
 - rowPmi:
     Control: Label@2.5.1
     Properties:
-      Text: =Text(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days), "dd/mm/yyyy") & If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) < Today(), "  OVERDUE", "")
+      Text: =Text((ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7), "dd/mm/yyyy") & If((ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7) < Today(), "  OVERDUE", "")
       X: =896
       Y: =8
       Width: =220
       Height: =28
       Size: =13
       FontWeight: =FontWeight.Bold
-      Color: =If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) < Today(), RGBA(192, 57, 43, 1), If(DateAdd(ThisItem.'Last PMI Date', ThisItem.'PMI Frequency (Weeks)' * 7, Days) <= DateAdd(Today(), 14, Days), RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+      Color: =If((ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7) < Today(), RGBA(192, 57, 43, 1), If((ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7) <= (Today() + 14), RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
       Font: =Font.'Open Sans'
       Fill: =RGBA(0, 0, 0, 0)
       BorderThickness: =0
