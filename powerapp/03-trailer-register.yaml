@@ -1046,7 +1046,7 @@
             Width: =118
             Height: =44
             Size: =11
-            Color: =If(ThisItem.'M.O.T Expiry' < Today(), RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
+            Color: =If(ThisItem.'M.O.T Expiry' < Today() + 14, RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
@@ -1067,7 +1067,7 @@
             Width: =110
             Height: =44
             Size: =11
-            Color: =If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today(), RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Color: =If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left

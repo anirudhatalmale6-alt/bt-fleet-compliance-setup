@@ -1512,13 +1512,13 @@
       - d_rDays:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(DateDiff(Today(), ThisItem.EvDate)) & "d"
+            Text: =If(ThisItem.EvDate < Today(), Text(Abs(DateDiff(Today(), ThisItem.EvDate))) & "d LATE", Text(DateDiff(Today(), ThisItem.EvDate)) & "d")
             X: =456
             Y: =0
-            Width: =60
+            Width: =78
             Height: =44
             Size: =11
-            Color: =If(ThisItem.EvDate < Today(), RGBA(192, 57, 43, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Color: =If(ThisItem.EvDate < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
@@ -1534,14 +1534,14 @@
       - d_rStat:
           Control: Label@2.5.1
           Properties:
-            Text: =If(ThisItem.EvDate < Today(), "OVERDUE", If(ThisItem.EvDate <= Today() + 14, "Due soon", "On track"))
-            X: =526
+            Text: =If(ThisItem.EvDate < Today(), "OVERDUE", If(ThisItem.EvDate < Today() + 7, "Urgent", If(ThisItem.EvDate <= Today() + 14, "Due soon", "On track")))
+            X: =540
             Y: =8
-            Width: =120
+            Width: =106
             Height: =28
             Size: =10
-            Color: =If(ThisItem.EvDate < Today(), RGBA(192, 57, 43, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =If(ThisItem.EvDate < Today(), RGBA(253, 226, 223, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
+            Color: =If(ThisItem.EvDate < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Fill: =If(ThisItem.EvDate < Today() + 7, RGBA(253, 226, 223, 1), If(ThisItem.EvDate <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
             Font: =Font.'Open Sans'
             Align: =Align.Center
             VerticalAlign: =VerticalAlign.Middle
@@ -1867,7 +1867,7 @@
             Width: =14
             Height: =20
             Size: =12
-            Color: =If(ThisItem.EvDate < Today(), RGBA(192, 57, 43, 1), RGBA(160, 106, 0, 1))
+            Color: =If(ThisItem.EvDate < Today() + 7, RGBA(192, 57, 43, 1), RGBA(160, 106, 0, 1))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left

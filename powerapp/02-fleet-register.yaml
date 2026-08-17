@@ -1046,7 +1046,7 @@
             Width: =118
             Height: =44
             Size: =11
-            Color: =If(ThisItem.'M.O.T Expiry' < Today(), RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
+            Color: =If(ThisItem.'M.O.T Expiry' < Today() + 14, RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
@@ -1082,14 +1082,14 @@
       - f_rDays:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(DateDiff(Today(), ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7)) & "d"
-            X: =940
+            Text: =If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today(), Text(Abs(DateDiff(Today(), ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7))) & "d LATE", Text(DateDiff(Today(), ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7)) & "d")
+            X: =928
             Y: =8
-            Width: =70
+            Width: =82
             Height: =28
             Size: =10
-            Color: =If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today(), RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today(), RGBA(253, 226, 223, 1), If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
+            Color: =If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Fill: =If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today() + 7, RGBA(253, 226, 223, 1), If(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
             Font: =Font.'Open Sans'
             Align: =Align.Center
             VerticalAlign: =VerticalAlign.Middle
