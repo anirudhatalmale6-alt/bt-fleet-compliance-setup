@@ -1019,7 +1019,7 @@
       - t_rFreq:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(ThisItem.'PMI Frequency (Weeks)') & " wks"
+            Text: =Text(ThisItem.'PMI Frequency (Weeks )') & " wks"
             X: =616
             Y: =0
             Width: =78
@@ -1040,13 +1040,13 @@
       - t_rMot:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(ThisItem.'M.O.T Expiry', "dd mmm yy")
+            Text: =Text(ThisItem.'M.O.T Expiry ', "dd mmm yy")
             X: =696
             Y: =0
             Width: =118
             Height: =44
             Size: =11
-            Color: =If(ThisItem.'M.O.T Expiry' < Today() + 14, RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
+            Color: =If(ThisItem.'M.O.T Expiry ' < Today() + 14, RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry ' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
@@ -1061,13 +1061,13 @@
       - t_rPmi:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7, "dd mmm yy")
+            Text: =Text(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7, "dd mmm yy")
             X: =816
             Y: =0
             Width: =110
             Height: =44
             Size: =11
-            Color: =If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI' + ThisItem.'PMI Frequency (Weeks)' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Color: =If(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7 < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
