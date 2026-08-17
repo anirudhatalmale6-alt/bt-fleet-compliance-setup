@@ -1411,7 +1411,7 @@
     Control: Gallery@2.15.0
     Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
     Properties:
-      Items: =SortByColumns(Filter(Ungroup(Table({R:AddColumns(Vehicles, "EvType", "PMI", "EvDate", 'Last PMI Date' + 'PMI Frequency (Weeks)' * 7)}, {R:AddColumns(Vehicles, "EvType", "MOT", "EvDate", 'M.O.T Expiry')}, {R:AddColumns(Vehicles, "EvType", "Brake Test", "EvDate", 'Brake Test Due')}, {R:AddColumns(Vehicles, "EvType", "Tacho Calib.", "EvDate", 'Tachograph Calibration Expiry')}), "R"), !IsBlank(EvDate), EvDate <= Today() + 60), "EvDate", SortOrder.Ascending)
+      Items: =Sort(Filter(Ungroup(ForAll(Vehicles, {R:Table({Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"PMI", EvDate:'Last PMI Date' + 'PMI Frequency (Weeks)' * 7}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"MOT", EvDate:'M.O.T Expiry'}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"Brake Test", EvDate:'Brake Test Due'}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"Tacho Calib.", EvDate:'Tachograph Calibration Expiry'})}), R), !IsBlank(EvDate), EvDate <= Today() + 60), EvDate)
       X: =235
       Y: =304
       Width: =758
@@ -1427,7 +1427,7 @@
       - d_rReg:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Title
+            Text: =ThisItem.Reg
             X: =16
             Y: =0
             Width: =120
@@ -1449,7 +1449,7 @@
       - d_rFleet:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.'Fleet Number'
+            Text: =ThisItem.Fleet
             X: =146
             Y: =0
             Width: =60
@@ -1556,7 +1556,7 @@
       - d_rOp:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Operator
+            Text: =ThisItem.Op
             X: =656
             Y: =0
             Width: =100
@@ -1845,7 +1845,7 @@
     Control: Gallery@2.15.0
     Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
     Properties:
-      Items: =FirstN(SortByColumns(Filter(Ungroup(Table({R:AddColumns(Vehicles, "EvType", "PMI", "EvDate", 'Last PMI Date' + 'PMI Frequency (Weeks)' * 7)}, {R:AddColumns(Vehicles, "EvType", "MOT", "EvDate", 'M.O.T Expiry')}, {R:AddColumns(Vehicles, "EvType", "Brake Test", "EvDate", 'Brake Test Due')}, {R:AddColumns(Vehicles, "EvType", "Tacho Calib.", "EvDate", 'Tachograph Calibration Expiry')}), "R"), !IsBlank(EvDate), EvDate <= Today() + 14), "EvDate", SortOrder.Ascending), 4)
+      Items: =FirstN(Sort(Filter(Ungroup(ForAll(Vehicles, {R:Table({Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"PMI", EvDate:'Last PMI Date' + 'PMI Frequency (Weeks)' * 7}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"MOT", EvDate:'M.O.T Expiry'}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"Brake Test", EvDate:'Brake Test Due'}, {Reg:Title, Fleet:'Fleet Number', Op:Operator, EvType:"Tacho Calib.", EvDate:'Tachograph Calibration Expiry'})}), R), !IsBlank(EvDate), EvDate <= Today() + 14), EvDate), 4)
       X: =1011
       Y: =480
       Width: =326
@@ -1882,7 +1882,7 @@
       - d_aTxt:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Title & " " & ThisItem.EvType & " due " & Text(ThisItem.EvDate, "dd mmm")
+            Text: =ThisItem.Reg & " " & ThisItem.EvType & " due " & Text(ThisItem.EvDate, "dd mmm")
             X: =30
             Y: =4
             Width: =280

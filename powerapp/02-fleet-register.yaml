@@ -918,7 +918,7 @@
     Control: Gallery@2.15.0
     Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
     Properties:
-      Items: =SortByColumns(Vehicles, "Title", SortOrder.Ascending)
+      Items: =Sort(Vehicles, Title)
       X: =235
       Y: =167
       Width: =1102
