@@ -1,4 +1,4 @@
-- b_bg:
+- dc_bg:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -19,7 +19,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_hdr:
+- dc_hdr:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -40,7 +40,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_logo:
+- dc_logo:
     Control: Label@2.5.1
     Properties:
       Text: ="BT"
@@ -62,7 +62,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_ttl:
+- dc_ttl:
     Control: Label@2.5.1
     Properties:
       Text: ="BT Transport Management"
@@ -84,7 +84,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_ttl2:
+- dc_ttl2:
     Control: Label@2.5.1
     Properties:
       Text: ="- Fleet Compliance"
@@ -105,7 +105,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_live:
+- dc_live:
     Control: Label@2.5.1
     Properties:
       Text: ="LIVE DATA  MICROSOFT 365"
@@ -127,7 +127,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_user:
+- dc_user:
     Control: Label@2.5.1
     Properties:
       Text: ="Beavan Tafirenyika"
@@ -148,7 +148,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_nav:
+- dc_nav:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -169,7 +169,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_n0b:
+- dc_n0b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -191,7 +191,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrDash)
-- b_n0t:
+- dc_n0t:
     Control: Label@2.5.1
     Properties:
       Text: ="Dashboard"
@@ -213,7 +213,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrDash)
-- b_n1b:
+- dc_n1b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -235,7 +235,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrFleet)
-- b_n1t:
+- dc_n1t:
     Control: Label@2.5.1
     Properties:
       Text: ="Fleet Register"
@@ -257,7 +257,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrFleet)
-- b_n2b:
+- dc_n2b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -279,7 +279,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrTrailers)
-- b_n2t:
+- dc_n2t:
     Control: Label@2.5.1
     Properties:
       Text: ="Trailer Register"
@@ -301,7 +301,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrTrailers)
-- b_n3b:
+- dc_n3b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -323,7 +323,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrPlanner)
-- b_n3t:
+- dc_n3t:
     Control: Label@2.5.1
     Properties:
       Text: ="Maintenance Planner"
@@ -345,7 +345,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrPlanner)
-- b_n4b:
+- dc_n4b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -366,8 +366,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
-- b_n4t:
+      OnSelect: =Navigate(scrDefects)
+- dc_n4t:
     Control: Label@2.5.1
     Properties:
       Text: ="Defects"
@@ -388,8 +388,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
-- b_n5b:
+      OnSelect: =Navigate(scrDefects)
+- dc_n5b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -399,49 +399,6 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(17, 55, 102, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      OnSelect: =Navigate(scrBrake)
-- b_n5a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =0
-      Y: =276
-      Width: =4
-      Height: =38
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(202, 163, 68, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_n5t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Brake Tests"
-      X: =20
-      Y: =276
-      Width: =180
-      Height: =38
-      Size: =11
-      Color: =RGBA(255, 255, 255, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -453,9 +410,30 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
       OnSelect: =Navigate(scrBrake)
-- b_n6b:
+- dc_n5t:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Brake Tests"
+      X: =20
+      Y: =276
+      Width: =180
+      Height: =38
+      Size: =11
+      Color: =RGBA(190, 203, 222, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      OnSelect: =Navigate(scrBrake)
+- dc_n6b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -477,7 +455,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrMot)
-- b_n6t:
+- dc_n6t:
     Control: Label@2.5.1
     Properties:
       Text: ="MOT Register"
@@ -499,7 +477,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrMot)
-- b_n7b:
+- dc_n7b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -509,7 +487,7 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
+      Fill: =RGBA(17, 55, 102, 1)
       Font: =Font.'Open Sans'
       Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
@@ -520,8 +498,29 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
-- b_n7t:
+      OnSelect: =Navigate(scrDocs)
+- dc_n7a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =356
+      Width: =4
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- dc_n7t:
     Control: Label@2.5.1
     Properties:
       Text: ="Documents"
@@ -530,7 +529,7 @@
       Width: =180
       Height: =38
       Size: =11
-      Color: =RGBA(190, 203, 222, 1)
+      Color: =RGBA(255, 255, 255, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -542,8 +541,9 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
-- b_n8b:
+      FontWeight: =FontWeight.Bold
+      OnSelect: =Navigate(scrDocs)
+- dc_n8b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -564,8 +564,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
-- b_n8t:
+      OnSelect: =Navigate(scrReports)
+- dc_n8t:
     Control: Label@2.5.1
     Properties:
       Text: ="Reports"
@@ -586,8 +586,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
-- b_n9b:
+      OnSelect: =Navigate(scrReports)
+- dc_n9b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -608,8 +608,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
-- b_n9t:
+      OnSelect: =Navigate(scrAudit)
+- dc_n9t:
     Control: Label@2.5.1
     Properties:
       Text: ="Audit Log"
@@ -630,11 +630,11 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
-- b_h1:
+      OnSelect: =Navigate(scrAudit)
+- dc_h1:
     Control: Label@2.5.1
     Properties:
-      Text: ="Brake Test Register"
+      Text: ="Documents"
       X: =234
       Y: =70
       Width: =700
@@ -653,10 +653,10 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_h2:
+- dc_h2:
     Control: Label@2.5.1
     Properties:
-      Text: ="DVSA expects a laden roller brake test at least four times a year  one per safety inspection"
+      Text: ="Every certificate stored against the vehicle it belongs to"
       X: =234
       Y: =100
       Width: =900
@@ -674,14 +674,14 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_b1c:
+- dc_pnl:
     Control: Label@2.5.1
     Properties:
       Text: =""
       X: =234
       Y: =132
-      Width: =210
-      Height: =76
+      Width: =1104
+      Height: =612
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(255, 255, 255, 1)
@@ -695,19 +695,19 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_b1a:
+- dc_tag:
     Control: Label@2.5.1
     Properties:
-      Text: =""
-      X: =234
-      Y: =132
-      Width: =4
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="COMING IN A LATER RELEASE"
+      X: =250
+      Y: =152
+      Width: =260
+      Height: =26
+      Size: =9
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(202, 163, 68, 1)
       Font: =Font.'Open Sans'
-      Align: =Align.Left
+      Align: =Align.Center
       VerticalAlign: =VerticalAlign.Middle
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
@@ -716,15 +716,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- b_b1v:
+      FontWeight: =FontWeight.Bold
+- dc_t:
     Control: Label@2.5.1
     Properties:
-      Text: =Text(CountRows(Vehicles))
-      X: =248
-      Y: =140
-      Width: =186
-      Height: =34
-      Size: =24
+      Text: ="Documents"
+      X: =250
+      Y: =192
+      Width: =1070
+      Height: =40
+      Size: =22
       Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
@@ -738,446 +739,37 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_b1k:
+- dc_s:
     Control: Label@2.5.1
     Properties:
-      Text: ="VEHICLES"
-      X: =248
-      Y: =174
-      Width: =190
-      Height: =20
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b2c:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =456
-      Y: =132
-      Width: =210
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(255, 255, 255, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =1
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b2a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =456
-      Y: =132
-      Width: =4
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(192, 57, 43, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b2v:
-    Control: Label@2.5.1
-    Properties:
-      Text: =Text(CountRows(Filter(Vehicles, 'Brake Test Due' < Today())))
-      X: =470
-      Y: =140
-      Width: =186
-      Height: =34
-      Size: =24
-      Color: =RGBA(192, 57, 43, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b2k:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="OVERDUE"
-      X: =470
-      Y: =174
-      Width: =190
-      Height: =20
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b3c:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =678
-      Y: =132
-      Width: =210
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(255, 255, 255, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =1
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b3a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =678
-      Y: =132
-      Width: =4
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(160, 106, 0, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b3v:
-    Control: Label@2.5.1
-    Properties:
-      Text: =Text(CountRows(Filter(Vehicles, 'Brake Test Due' >= Today(), 'Brake Test Due' <= Today() + 14)))
-      X: =692
-      Y: =140
-      Width: =186
-      Height: =34
-      Size: =24
-      Color: =RGBA(160, 106, 0, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b3k:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="DUE IN 14 DAYS"
-      X: =692
-      Y: =174
-      Width: =190
-      Height: =20
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b4c:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =900
-      Y: =132
-      Width: =210
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(255, 255, 255, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =1
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b4a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =900
-      Y: =132
-      Width: =4
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(31, 90, 168, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b4v:
-    Control: Label@2.5.1
-    Properties:
-      Text: =Text(CountRows(Filter(Vehicles, 'Brake Test Due' > Today() + 14, 'Brake Test Due' <= Today() + 30)))
-      X: =914
-      Y: =140
-      Width: =186
-      Height: =34
-      Size: =24
-      Color: =RGBA(31, 90, 168, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b4k:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="DUE IN 30 DAYS"
-      X: =914
-      Y: =174
-      Width: =190
-      Height: =20
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b5c:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =1122
-      Y: =132
-      Width: =210
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(255, 255, 255, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =1
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b5a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =1122
-      Y: =132
-      Width: =4
-      Height: =76
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(16, 124, 16, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_b5v:
-    Control: Label@2.5.1
-    Properties:
-      Text: =Text(CountRows(Filter(Vehicles, 'Brake Test Due' > Today() + 30)))
-      X: =1136
-      Y: =140
-      Width: =186
-      Height: =34
-      Size: =24
-      Color: =RGBA(16, 124, 16, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_b5k:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="IN DATE"
-      X: =1136
-      Y: =174
-      Width: =190
-      Height: =20
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_pnl:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =234
-      Y: =224
-      Width: =1104
-      Height: =520
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(255, 255, 255, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =1
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_hb:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =235
-      Y: =225
-      Width: =1102
-      Height: =34
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(246, 248, 251, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- b_hh0:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="REG"
+      Text: ="PMI sheets, MOT certificates and brake test printouts filed against the vehicle, so proving compliance is one click instead of a filing cabinet."
       X: =250
-      Y: =225
-      Width: =138
-      Height: =34
-      Size: =9
+      Y: =238
+      Width: =900
+      Height: =60
+      Size: =13
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
+      VerticalAlign: =VerticalAlign.Top
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
       PaddingLeft: =0
       PaddingRight: =0
       PaddingTop: =0
       PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh1:
+      Wrap: =true
+- dc_wt:
     Control: Label@2.5.1
     Properties:
-      Text: ="FLEET"
-      X: =390
-      Y: =225
-      Width: =68
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="What this screen will do"
+      X: =250
+      Y: =320
+      Width: =500
+      Height: =26
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1190,16 +782,16 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- b_hh2:
+- dc_b0d:
     Control: Label@2.5.1
     Properties:
-      Text: ="MAKE / MODEL"
-      X: =460
-      Y: =225
-      Width: =208
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="●"
+      X: =252
+      Y: =356
+      Width: =16
+      Height: =26
+      Size: =11
+      Color: =RGBA(202, 163, 68, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1211,17 +803,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh3:
+- dc_b0t:
     Control: Label@2.5.1
     Properties:
-      Text: ="OPERATOR"
-      X: =670
-      Y: =225
-      Width: =178
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="Upload a PMI sheet straight onto the vehicle record"
+      X: =274
+      Y: =356
+      Width: =860
+      Height: =26
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1233,17 +824,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh4:
+- dc_b1d:
     Control: Label@2.5.1
     Properties:
-      Text: ="NEXT PMI"
-      X: =850
-      Y: =225
-      Width: =118
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="●"
+      X: =252
+      Y: =390
+      Width: =16
+      Height: =26
+      Size: =11
+      Color: =RGBA(202, 163, 68, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1255,17 +845,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh5:
+- dc_b1t:
     Control: Label@2.5.1
     Properties:
-      Text: ="BRAKE TEST DUE"
-      X: =970
-      Y: =225
-      Width: =118
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="MOT and brake test certificates held for the full retention period"
+      X: =274
+      Y: =390
+      Width: =860
+      Height: =26
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1277,17 +866,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh6:
+- dc_b2d:
     Control: Label@2.5.1
     Properties:
-      Text: ="DAYS"
-      X: =1090
-      Y: =225
-      Width: =88
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="●"
+      X: =252
+      Y: =424
+      Width: =16
+      Height: =26
+      Size: =11
+      Color: =RGBA(202, 163, 68, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1299,17 +887,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_hh7:
+- dc_b2t:
     Control: Label@2.5.1
     Properties:
-      Text: ="STATUS"
-      X: =1184
-      Y: =225
-      Width: =130
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
+      Text: ="A green tick on the dashboard means the paperwork exists"
+      X: =274
+      Y: =424
+      Width: =860
+      Height: =26
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -1321,214 +908,89 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- b_gal:
-    Control: Gallery@2.15.0
-    Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+- dc_b3d:
+    Control: Label@2.5.1
     Properties:
-      Items: =Sort(Filter(Vehicles, !IsBlank('Brake Test Due')), 'Brake Test Due')
-      X: =235
-      Y: =259
-      Width: =1102
-      Height: =482
-      TemplateSize: =44
-      TemplatePadding: =0
-      ShowNavigation: =false
-      ShowScrollbar: =true
+      Text: ="●"
+      X: =252
+      Y: =458
+      Width: =16
+      Height: =26
+      Size: =11
+      Color: =RGBA(202, 163, 68, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- dc_b3t:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Missing paperwork shows as missing  it cannot be marked done"
+      X: =274
+      Y: =458
+      Width: =860
+      Height: =26
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
       Fill: =RGBA(0, 0, 0, 0)
-    Children:
-      - b_rReg:
-          Control: Label@2.5.1
-          Properties:
-            Text: =ThisItem.Title
-            X: =16
-            Y: =0
-            Width: =138
-            Height: =44
-            Size: =12
-            Color: =RGBA(7, 29, 58, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-            FontWeight: =FontWeight.Bold
-      - b_rFleet:
-          Control: Label@2.5.1
-          Properties:
-            Text: =ThisItem.'Fleet Number'
-            X: =156
-            Y: =0
-            Width: =68
-            Height: =44
-            Size: =11
-            Color: =RGBA(85, 98, 122, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - b_rMake:
-          Control: Label@2.5.1
-          Properties:
-            Text: =ThisItem.'Make/ Model'
-            X: =226
-            Y: =0
-            Width: =208
-            Height: =44
-            Size: =11
-            Color: =RGBA(7, 29, 58, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - b_rOp:
-          Control: Label@2.5.1
-          Properties:
-            Text: =ThisItem.Operator
-            X: =436
-            Y: =0
-            Width: =178
-            Height: =44
-            Size: =11
-            Color: =RGBA(85, 98, 122, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - b_rPmi:
-          Control: Label@2.5.1
-          Properties:
-            Text: =Text(ThisItem.'Last PMI Date' + ThisItem.'PMI Frequency (Weeks)' * 7, "dd mmm yy")
-            X: =616
-            Y: =0
-            Width: =118
-            Height: =44
-            Size: =11
-            Color: =RGBA(85, 98, 122, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - b_rBt:
-          Control: Label@2.5.1
-          Properties:
-            Text: =Text(ThisItem.'Brake Test Due', "dd mmm yy")
-            X: =736
-            Y: =0
-            Width: =118
-            Height: =44
-            Size: =12
-            Color: =If(ThisItem.'Brake Test Due' < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Brake Test Due' <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-            FontWeight: =FontWeight.Bold
-      - b_rDays:
-          Control: Label@2.5.1
-          Properties:
-            Text: =If(ThisItem.'Brake Test Due' < Today(), Text(Abs(DateDiff(Today(), ThisItem.'Brake Test Due'))) & "d LATE", Text(DateDiff(Today(), ThisItem.'Brake Test Due')) & "d")
-            X: =856
-            Y: =8
-            Width: =88
-            Height: =28
-            Size: =10
-            Color: =If(ThisItem.'Brake Test Due' < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Brake Test Due' <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =If(ThisItem.'Brake Test Due' < Today() + 7, RGBA(253, 226, 223, 1), If(ThisItem.'Brake Test Due' <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
-            Font: =Font.'Open Sans'
-            Align: =Align.Center
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-            FontWeight: =FontWeight.Bold
-      - b_rStat:
-          Control: Label@2.5.1
-          Properties:
-            Text: =If(ThisItem.'Brake Test Due' < Today(), "OVERDUE", If(ThisItem.'Brake Test Due' < Today() + 7, "Book now", If(ThisItem.'Brake Test Due' <= Today() + 14, "Due soon", "In date")))
-            X: =950
-            Y: =8
-            Width: =130
-            Height: =28
-            Size: =10
-            Color: =If(ThisItem.'Brake Test Due' < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Brake Test Due' <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =If(ThisItem.'Brake Test Due' < Today() + 7, RGBA(253, 226, 223, 1), If(ThisItem.'Brake Test Due' <= Today() + 14, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
-            Font: =Font.'Open Sans'
-            Align: =Align.Center
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-            FontWeight: =FontWeight.Bold
-      - b_rRule:
-          Control: Label@2.5.1
-          Properties:
-            Text: =""
-            X: =0
-            Y: =43
-            Width: =1102
-            Height: =1
-            Size: =1
-            Color: =RGBA(85, 98, 122, 1)
-            Fill: =RGBA(233, 238, 245, 1)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- dc_note:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="The four live screens above are running on your real Microsoft 365 data right now. This one is a placeholder so you can see exactly where it lands."
+      X: =250
+      Y: =520
+      Width: =860
+      Height: =40
+      Size: =10
+      Color: =RGBA(140, 152, 172, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Top
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =true
+- dc_btn:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Back to dashboard"
+      X: =250
+      Y: =576
+      Width: =260
+      Height: =40
+      Size: =12
+      Color: =RGBA(7, 29, 58, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Center
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+      OnSelect: =Navigate(scrDash)

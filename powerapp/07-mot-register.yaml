@@ -366,7 +366,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrDefects)
 - m_n4t:
     Control: Label@2.5.1
     Properties:
@@ -388,7 +388,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrDefects)
 - m_n5b:
     Control: Label@2.5.1
     Properties:
@@ -520,7 +520,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrDocs)
 - m_n7t:
     Control: Label@2.5.1
     Properties:
@@ -542,7 +542,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrDocs)
 - m_n8b:
     Control: Label@2.5.1
     Properties:
@@ -564,7 +564,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrReports)
 - m_n8t:
     Control: Label@2.5.1
     Properties:
@@ -586,7 +586,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrReports)
 - m_n9b:
     Control: Label@2.5.1
     Properties:
@@ -608,7 +608,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrAudit)
 - m_n9t:
     Control: Label@2.5.1
     Properties:
@@ -630,7 +630,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
+      OnSelect: =Navigate(scrAudit)
 - m_h1:
     Control: Label@2.5.1
     Properties:
