@@ -355,7 +355,7 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
+      Fill: =If(varModule = "Defects", RGBA(17, 55, 102, 1), RGBA(0, 0, 0, 0))
       Font: =Font.'Open Sans'
       Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
@@ -366,7 +366,28 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
+- s_n4a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =236
+      Width: =If(varModule = "Defects", 4, 0)
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
 - s_n4t:
     Control: Label@2.5.1
     Properties:
@@ -376,7 +397,7 @@
       Width: =180
       Height: =38
       Size: =11
-      Color: =RGBA(190, 203, 222, 1)
+      Color: =If(varModule = "Defects", RGBA(255, 255, 255, 1), RGBA(190, 203, 222, 1))
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -388,7 +409,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
+      FontWeight: =If(varModule = "Defects", FontWeight.Bold, FontWeight.Normal)
 - s_n5b:
     Control: Label@2.5.1
     Properties:
@@ -410,7 +432,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Navigate(scrBrake)
 - s_n5t:
     Control: Label@2.5.1
     Properties:
@@ -432,7 +454,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Navigate(scrBrake)
 - s_n6b:
     Control: Label@2.5.1
     Properties:
@@ -454,7 +476,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Navigate(scrMot)
 - s_n6t:
     Control: Label@2.5.1
     Properties:
@@ -476,7 +498,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Navigate(scrMot)
 - s_n7b:
     Control: Label@2.5.1
     Properties:
@@ -487,7 +509,7 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
+      Fill: =If(varModule = "Documents", RGBA(17, 55, 102, 1), RGBA(0, 0, 0, 0))
       Font: =Font.'Open Sans'
       Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
@@ -498,7 +520,28 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
+- s_n7a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =356
+      Width: =If(varModule = "Documents", 4, 0)
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
 - s_n7t:
     Control: Label@2.5.1
     Properties:
@@ -508,7 +551,7 @@
       Width: =180
       Height: =38
       Size: =11
-      Color: =RGBA(190, 203, 222, 1)
+      Color: =If(varModule = "Documents", RGBA(255, 255, 255, 1), RGBA(190, 203, 222, 1))
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -520,7 +563,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
+      FontWeight: =If(varModule = "Documents", FontWeight.Bold, FontWeight.Normal)
 - s_n8b:
     Control: Label@2.5.1
     Properties:
@@ -531,7 +575,7 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
+      Fill: =If(varModule = "Reports", RGBA(17, 55, 102, 1), RGBA(0, 0, 0, 0))
       Font: =Font.'Open Sans'
       Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
@@ -542,7 +586,28 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
+- s_n8a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =396
+      Width: =If(varModule = "Reports", 4, 0)
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
 - s_n8t:
     Control: Label@2.5.1
     Properties:
@@ -552,7 +617,7 @@
       Width: =180
       Height: =38
       Size: =11
-      Color: =RGBA(190, 203, 222, 1)
+      Color: =If(varModule = "Reports", RGBA(255, 255, 255, 1), RGBA(190, 203, 222, 1))
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -564,7 +629,8 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
+      OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
+      FontWeight: =If(varModule = "Reports", FontWeight.Bold, FontWeight.Normal)
 - s_n9b:
     Control: Label@2.5.1
     Properties:
@@ -574,6 +640,94 @@
       Width: =210
       Height: =38
       Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =If(varModule = "Audit Log", RGBA(17, 55, 102, 1), RGBA(0, 0, 0, 0))
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
+- s_n9a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =436
+      Width: =If(varModule = "Audit Log", 4, 0)
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- s_n9t:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Audit Log"
+      X: =20
+      Y: =436
+      Width: =180
+      Height: =38
+      Size: =11
+      Color: =If(varModule = "Audit Log", RGBA(255, 255, 255, 1), RGBA(190, 203, 222, 1))
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
+      FontWeight: =If(varModule = "Audit Log", FontWeight.Bold, FontWeight.Normal)
+- s_h1:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(IsBlank(varModule), "This module", varModule)
+      X: =234
+      Y: =70
+      Width: =700
+      Height: =32
+      Size: =21
+      Color: =RGBA(7, 29, 58, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- s_h2:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Scheduled for a later release  the data behind it is already being captured"
+      X: =234
+      Y: =100
+      Width: =900
+      Height: =22
+      Size: =11
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
@@ -586,29 +740,6 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrSoon)
-- s_n9t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Audit Log"
-      X: =20
-      Y: =436
-      Width: =180
-      Height: =38
-      Size: =11
-      Color: =RGBA(190, 203, 222, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      OnSelect: =Navigate(scrSoon)
 - s_pnl:
     Control: Label@2.5.1
     Properties:
@@ -616,7 +747,7 @@
       X: =234
       Y: =132
       Width: =1104
-      Height: =400
+      Height: =420
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(255, 255, 255, 1)
@@ -635,7 +766,7 @@
     Properties:
       Text: ="●"
       X: =234
-      Y: =200
+      Y: =180
       Width: =1104
       Height: =40
       Size: =24
@@ -654,9 +785,9 @@
 - s_t:
     Control: Label@2.5.1
     Properties:
-      Text: ="This module is next in the build"
+      Text: =If(IsBlank(varModule), "This module", varModule) & " is next in the build"
       X: =234
-      Y: =250
+      Y: =226
       Width: =1104
       Height: =40
       Size: =20
@@ -676,11 +807,11 @@
 - s_s:
     Control: Label@2.5.1
     Properties:
-      Text: ="Defects, Brake Tests, MOT Register, Documents, Reports and Audit Log are scheduled for the next release. The data behind them is already being captured in Microsoft 365."
+      Text: =Switch(varModule, "Defects", "Drivers report a defect from their phone, it lands here, and the vehicle cannot be marked roadworthy until the repair is signed off.", "Documents", "PMI sheets, MOT certificates and brake test printouts stored against the vehicle, so an audit is one click rather than a filing cabinet.", "Reports", "The DVSA public inquiry pack - inspection history, brake test evidence and driver defect records, exported ready to hand over.", "Audit Log", "Every change to every record with who changed it and when, which is what a traffic commissioner asks for first.", "This screen is part of a later release.")
       X: =334
-      Y: =300
+      Y: =276
       Width: =904
-      Height: =70
+      Height: =90
       Size: =12
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(0, 0, 0, 0)
@@ -717,3 +848,24 @@
       Wrap: =false
       FontWeight: =FontWeight.Bold
       OnSelect: =Navigate(scrDash)
+- s_note:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Everything on the left with a live screen behind it is running on your real Microsoft 365 data right now."
+      X: =334
+      Y: =470
+      Width: =904
+      Height: =40
+      Size: =10
+      Color: =RGBA(140, 152, 172, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Center
+      VerticalAlign: =VerticalAlign.Top
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =true

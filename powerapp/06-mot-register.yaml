@@ -1,4 +1,4 @@
-- t_bg:
+- m_bg:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -19,7 +19,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_hdr:
+- m_hdr:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -40,7 +40,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_logo:
+- m_logo:
     Control: Label@2.5.1
     Properties:
       Text: ="BT"
@@ -62,7 +62,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_ttl:
+- m_ttl:
     Control: Label@2.5.1
     Properties:
       Text: ="BT Transport Management"
@@ -84,7 +84,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_ttl2:
+- m_ttl2:
     Control: Label@2.5.1
     Properties:
       Text: ="- Fleet Compliance"
@@ -105,7 +105,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_live:
+- m_live:
     Control: Label@2.5.1
     Properties:
       Text: ="LIVE DATA  MICROSOFT 365"
@@ -127,7 +127,7 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_user:
+- m_user:
     Control: Label@2.5.1
     Properties:
       Text: ="Beavan Tafirenyika"
@@ -148,7 +148,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_nav:
+- m_nav:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -169,7 +169,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_n0b:
+- m_n0b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -191,7 +191,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrDash)
-- t_n0t:
+- m_n0t:
     Control: Label@2.5.1
     Properties:
       Text: ="Dashboard"
@@ -213,7 +213,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrDash)
-- t_n1b:
+- m_n1b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -235,7 +235,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrFleet)
-- t_n1t:
+- m_n1t:
     Control: Label@2.5.1
     Properties:
       Text: ="Fleet Register"
@@ -257,7 +257,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrFleet)
-- t_n2b:
+- m_n2b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -267,49 +267,6 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(17, 55, 102, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      OnSelect: =Navigate(scrTrailers)
-- t_n2a:
-    Control: Label@2.5.1
-    Properties:
-      Text: =""
-      X: =0
-      Y: =156
-      Width: =4
-      Height: =38
-      Size: =1
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(202, 163, 68, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- t_n2t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Trailer Register"
-      X: =20
-      Y: =156
-      Width: =180
-      Height: =38
-      Size: =11
-      Color: =RGBA(255, 255, 255, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -321,9 +278,30 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
       OnSelect: =Navigate(scrTrailers)
-- t_n3b:
+- m_n2t:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Trailer Register"
+      X: =20
+      Y: =156
+      Width: =180
+      Height: =38
+      Size: =11
+      Color: =RGBA(190, 203, 222, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      OnSelect: =Navigate(scrTrailers)
+- m_n3b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -345,7 +323,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrPlanner)
-- t_n3t:
+- m_n3t:
     Control: Label@2.5.1
     Properties:
       Text: ="Maintenance Planner"
@@ -367,7 +345,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrPlanner)
-- t_n4b:
+- m_n4b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -389,7 +367,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
-- t_n4t:
+- m_n4t:
     Control: Label@2.5.1
     Properties:
       Text: ="Defects"
@@ -411,7 +389,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Defects"); Navigate(scrSoon)
-- t_n5b:
+- m_n5b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -433,7 +411,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrBrake)
-- t_n5t:
+- m_n5t:
     Control: Label@2.5.1
     Properties:
       Text: ="Brake Tests"
@@ -455,7 +433,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrBrake)
-- t_n6b:
+- m_n6b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -465,7 +443,7 @@
       Height: =38
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
+      Fill: =RGBA(17, 55, 102, 1)
       Font: =Font.'Open Sans'
       Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
@@ -477,7 +455,28 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Navigate(scrMot)
-- t_n6t:
+- m_n6a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =316
+      Width: =4
+      Height: =38
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_n6t:
     Control: Label@2.5.1
     Properties:
       Text: ="MOT Register"
@@ -486,7 +485,7 @@
       Width: =180
       Height: =38
       Size: =11
-      Color: =RGBA(190, 203, 222, 1)
+      Color: =RGBA(255, 255, 255, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -498,8 +497,9 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
+      FontWeight: =FontWeight.Bold
       OnSelect: =Navigate(scrMot)
-- t_n7b:
+- m_n7b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -521,7 +521,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
-- t_n7t:
+- m_n7t:
     Control: Label@2.5.1
     Properties:
       Text: ="Documents"
@@ -543,7 +543,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Documents"); Navigate(scrSoon)
-- t_n8b:
+- m_n8b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -565,7 +565,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
-- t_n8t:
+- m_n8t:
     Control: Label@2.5.1
     Properties:
       Text: ="Reports"
@@ -587,7 +587,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Reports"); Navigate(scrSoon)
-- t_n9b:
+- m_n9b:
     Control: Label@2.5.1
     Properties:
       Text: =""
@@ -609,7 +609,7 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
-- t_n9t:
+- m_n9t:
     Control: Label@2.5.1
     Properties:
       Text: ="Audit Log"
@@ -631,10 +631,10 @@
       PaddingBottom: =0
       Wrap: =false
       OnSelect: =Set(varModule, "Audit Log"); Navigate(scrSoon)
-- t_h1:
+- m_h1:
     Control: Label@2.5.1
     Properties:
-      Text: ="Trailer Register"
+      Text: ="MOT Register"
       X: =234
       Y: =70
       Width: =700
@@ -653,10 +653,10 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_h2:
+- m_h2:
     Control: Label@2.5.1
     Properties:
-      Text: ="Every trailer with its PMI cycle, MOT and LOLER thorough examination"
+      Text: ="Annual test dates for every vehicle and trailer  earliest expiry first"
       X: =234
       Y: =100
       Width: =900
@@ -674,14 +674,14 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_pnl:
+- m_m1c:
     Control: Label@2.5.1
     Properties:
       Text: =""
       X: =234
       Y: =132
-      Width: =1104
-      Height: =612
+      Width: =210
+      Height: =76
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(255, 255, 255, 1)
@@ -695,12 +695,442 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_hb:
+- m_m1a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =234
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(202, 163, 68, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m1v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Vehicles) + CountRows(Trailers))
+      X: =248
+      Y: =140
+      Width: =186
+      Height: =34
+      Size: =24
+      Color: =RGBA(7, 29, 58, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m1k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="ON THE REGISTER"
+      X: =248
+      Y: =174
+      Width: =190
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m2c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =456
+      Y: =132
+      Width: =210
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m2a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =456
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(192, 57, 43, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m2v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, 'M.O.T Expiry' < Today())) + CountRows(Filter(Trailers, 'M.O.T Expiry ' < Today())))
+      X: =470
+      Y: =140
+      Width: =186
+      Height: =34
+      Size: =24
+      Color: =RGBA(192, 57, 43, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m2k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="EXPIRED"
+      X: =470
+      Y: =174
+      Width: =190
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m3c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =678
+      Y: =132
+      Width: =210
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m3a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =678
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(160, 106, 0, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m3v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, 'M.O.T Expiry' >= Today(), 'M.O.T Expiry' <= Today() + 30)) + CountRows(Filter(Trailers, 'M.O.T Expiry ' >= Today(), 'M.O.T Expiry ' <= Today() + 30)))
+      X: =692
+      Y: =140
+      Width: =186
+      Height: =34
+      Size: =24
+      Color: =RGBA(160, 106, 0, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m3k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="DUE IN 30 DAYS"
+      X: =692
+      Y: =174
+      Width: =190
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m4c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =900
+      Y: =132
+      Width: =210
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m4a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =900
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(31, 90, 168, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m4v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, 'M.O.T Expiry' > Today() + 30, 'M.O.T Expiry' <= Today() + 90)) + CountRows(Filter(Trailers, 'M.O.T Expiry ' > Today() + 30, 'M.O.T Expiry ' <= Today() + 90)))
+      X: =914
+      Y: =140
+      Width: =186
+      Height: =34
+      Size: =24
+      Color: =RGBA(31, 90, 168, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m4k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="DUE IN 90 DAYS"
+      X: =914
+      Y: =174
+      Width: =190
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m5c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =1122
+      Y: =132
+      Width: =210
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m5a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =1122
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(16, 124, 16, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_m5v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Vehicles, 'M.O.T Expiry' > Today() + 30)) + CountRows(Filter(Trailers, 'M.O.T Expiry ' > Today() + 30)))
+      X: =1136
+      Y: =140
+      Width: =186
+      Height: =34
+      Size: =24
+      Color: =RGBA(16, 124, 16, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_m5k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="IN DATE"
+      X: =1136
+      Y: =174
+      Width: =190
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_pnl:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =234
+      Y: =224
+      Width: =1104
+      Height: =520
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- m_hb:
     Control: Label@2.5.1
     Properties:
       Text: =""
       X: =235
-      Y: =133
+      Y: =225
       Width: =1102
       Height: =34
       Size: =1
@@ -716,13 +1146,13 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- t_hh0:
+- m_hh0:
     Control: Label@2.5.1
     Properties:
-      Text: ="TRAILER"
+      Text: ="REG / TRAILER"
       X: =250
-      Y: =133
-      Width: =128
+      Y: =225
+      Width: =158
       Height: =34
       Size: =9
       Color: =RGBA(85, 98, 122, 1)
@@ -738,12 +1168,12 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh1:
+- m_hh1:
     Control: Label@2.5.1
     Properties:
       Text: ="FLEET"
-      X: =380
-      Y: =133
+      X: =410
+      Y: =225
       Width: =68
       Height: =34
       Size: =9
@@ -760,13 +1190,13 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh2:
+- m_hh2:
     Control: Label@2.5.1
     Properties:
-      Text: ="TYPE"
-      X: =450
-      Y: =133
-      Width: =198
+      Text: ="CATEGORY"
+      X: =480
+      Y: =225
+      Width: =98
       Height: =34
       Size: =9
       Color: =RGBA(85, 98, 122, 1)
@@ -782,13 +1212,35 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh3:
+- m_hh3:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="MAKE / TYPE"
+      X: =580
+      Y: =225
+      Width: =208
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- m_hh4:
     Control: Label@2.5.1
     Properties:
       Text: ="OPERATOR"
-      X: =650
-      Y: =133
-      Width: =198
+      X: =790
+      Y: =225
+      Width: =178
       Height: =34
       Size: =9
       Color: =RGBA(85, 98, 122, 1)
@@ -804,34 +1256,12 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh4:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="PMI FREQ"
-      X: =850
-      Y: =133
-      Width: =78
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- t_hh5:
+- m_hh5:
     Control: Label@2.5.1
     Properties:
       Text: ="MOT EXPIRY"
-      X: =930
-      Y: =133
+      X: =970
+      Y: =225
       Width: =118
       Height: =34
       Size: =9
@@ -848,13 +1278,13 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh6:
+- m_hh6:
     Control: Label@2.5.1
     Properties:
-      Text: ="NEXT PMI"
-      X: =1050
-      Y: =133
-      Width: =118
+      Text: ="DAYS"
+      X: =1090
+      Y: =225
+      Width: =88
       Height: =34
       Size: =9
       Color: =RGBA(85, 98, 122, 1)
@@ -870,35 +1300,13 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_hh7:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="LOLER"
-      X: =1164
-      Y: =133
-      Width: =84
-      Height: =34
-      Size: =9
-      Color: =RGBA(85, 98, 122, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-      FontWeight: =FontWeight.Bold
-- t_hh8:
+- m_hh7:
     Control: Label@2.5.1
     Properties:
       Text: ="STATUS"
-      X: =1248
-      Y: =133
-      Width: =80
+      X: =1184
+      Y: =225
+      Width: =130
       Height: =34
       Size: =9
       Color: =RGBA(85, 98, 122, 1)
@@ -914,15 +1322,15 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- t_gal:
+- m_gal:
     Control: Gallery@2.15.0
     Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
     Properties:
-      Items: =Sort(Trailers, Title)
+      Items: =Sort(Filter(Ungroup(Table({R:ForAll(Vehicles, {Reg:Title, Fleet:'Fleet Number', Cat:"Vehicle", Op:Operator, Detail:'Make/ Model', Mot:'M.O.T Expiry'})}, {R:ForAll(Trailers, {Reg:Title, Fleet:'Fleet Number', Cat:"Trailer", Op:Operator, Detail:'Trailer Type', Mot:'M.O.T Expiry '})}), R), !IsBlank(Mot)), Mot)
       X: =235
-      Y: =167
+      Y: =259
       Width: =1102
-      Height: =574
+      Height: =482
       TemplateSize: =44
       TemplatePadding: =0
       ShowNavigation: =false
@@ -931,13 +1339,13 @@
       BorderColor: =RGBA(201, 210, 222, 1)
       Fill: =RGBA(0, 0, 0, 0)
     Children:
-      - t_rReg:
+      - m_rReg:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Title
+            Text: =ThisItem.Reg
             X: =16
             Y: =0
-            Width: =128
+            Width: =158
             Height: =44
             Size: =12
             Color: =RGBA(7, 29, 58, 1)
@@ -953,11 +1361,11 @@
             PaddingBottom: =0
             Wrap: =false
             FontWeight: =FontWeight.Bold
-      - t_rFleet:
+      - m_rFleet:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.'Fleet Number'
-            X: =146
+            Text: =ThisItem.Fleet
+            X: =176
             Y: =0
             Width: =68
             Height: =44
@@ -974,13 +1382,35 @@
             PaddingTop: =0
             PaddingBottom: =0
             Wrap: =false
-      - t_rType:
+      - m_rCat:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.'Trailer Type'
-            X: =216
+            Text: =ThisItem.Cat
+            X: =246
+            Y: =8
+            Width: =88
+            Height: =28
+            Size: =9
+            Color: =If(ThisItem.Cat = "Vehicle", RGBA(31, 90, 168, 1), RGBA(106, 61, 154, 1))
+            Fill: =If(ThisItem.Cat = "Vehicle", RGBA(222, 234, 250, 1), RGBA(237, 228, 247, 1))
+            Font: =Font.'Open Sans'
+            Align: =Align.Center
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - m_rDet:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.Detail
+            X: =346
             Y: =0
-            Width: =198
+            Width: =208
             Height: =44
             Size: =11
             Color: =RGBA(7, 29, 58, 1)
@@ -995,13 +1425,13 @@
             PaddingTop: =0
             PaddingBottom: =0
             Wrap: =false
-      - t_rOp:
+      - m_rOp:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Operator
-            X: =416
+            Text: =ThisItem.Op
+            X: =556
             Y: =0
-            Width: =198
+            Width: =178
             Height: =44
             Size: =11
             Color: =RGBA(85, 98, 122, 1)
@@ -1016,37 +1446,16 @@
             PaddingTop: =0
             PaddingBottom: =0
             Wrap: =false
-      - t_rFreq:
+      - m_rMot:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(ThisItem.'PMI Frequency (Weeks )') & " wks"
-            X: =616
-            Y: =0
-            Width: =78
-            Height: =44
-            Size: =11
-            Color: =RGBA(85, 98, 122, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - t_rMot:
-          Control: Label@2.5.1
-          Properties:
-            Text: =Text(ThisItem.'M.O.T Expiry ', "dd mmm yy")
-            X: =696
+            Text: =Text(ThisItem.Mot, "dd mmm yy")
+            X: =736
             Y: =0
             Width: =118
             Height: =44
-            Size: =11
-            Color: =If(ThisItem.'M.O.T Expiry ' < Today() + 14, RGBA(192, 57, 43, 1), If(ThisItem.'M.O.T Expiry ' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(7, 29, 58, 1)))
+            Size: =12
+            Color: =If(ThisItem.Mot < Today() + 30, RGBA(192, 57, 43, 1), If(ThisItem.Mot <= Today() + 60, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
             Align: =Align.Left
@@ -1058,59 +1467,18 @@
             PaddingTop: =0
             PaddingBottom: =0
             Wrap: =false
-      - t_rPmi:
+            FontWeight: =FontWeight.Bold
+      - m_rDays:
           Control: Label@2.5.1
           Properties:
-            Text: =Text(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7, "dd mmm yy")
-            X: =816
-            Y: =0
-            Width: =110
-            Height: =44
-            Size: =11
-            Color: =If(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7 < Today() + 7, RGBA(192, 57, 43, 1), If(ThisItem.'Last PMI ' + ThisItem.'PMI Frequency (Weeks )' * 7 <= Today() + 14, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - t_rLoler:
-          Control: Label@2.5.1
-          Properties:
-            Text: =If(IsBlank(ThisItem.'LOLER Expiry'), "n/a", Text(ThisItem.'LOLER Expiry', "dd mmm yy"))
-            X: =930
-            Y: =0
-            Width: =84
-            Height: =44
-            Size: =10
-            Color: =If(!IsBlank(ThisItem.'LOLER Expiry') && ThisItem.'LOLER Expiry' <= Today() + 30, RGBA(160, 106, 0, 1), RGBA(85, 98, 122, 1))
-            Fill: =RGBA(0, 0, 0, 0)
-            Font: =Font.'Open Sans'
-            Align: =Align.Left
-            VerticalAlign: =VerticalAlign.Middle
-            BorderThickness: =0
-            BorderColor: =RGBA(201, 210, 222, 1)
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PaddingBottom: =0
-            Wrap: =false
-      - t_rStat:
-          Control: Label@2.5.1
-          Properties:
-            Text: =ThisItem.Status.Value
-            X: =1014
+            Text: =If(ThisItem.Mot < Today(), Text(Abs(DateDiff(Today(), ThisItem.Mot))) & "d LATE", Text(DateDiff(Today(), ThisItem.Mot)) & "d")
+            X: =856
             Y: =8
-            Width: =80
+            Width: =88
             Height: =28
             Size: =10
-            Color: =If(ThisItem.Status.Value = "VOR", RGBA(192, 57, 43, 1), RGBA(16, 124, 16, 1))
-            Fill: =If(ThisItem.Status.Value = "VOR", RGBA(253, 226, 223, 1), RGBA(223, 243, 226, 1))
+            Color: =If(ThisItem.Mot < Today() + 30, RGBA(192, 57, 43, 1), If(ThisItem.Mot <= Today() + 60, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Fill: =If(ThisItem.Mot < Today() + 30, RGBA(253, 226, 223, 1), If(ThisItem.Mot <= Today() + 60, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
             Font: =Font.'Open Sans'
             Align: =Align.Center
             VerticalAlign: =VerticalAlign.Middle
@@ -1122,7 +1490,29 @@
             PaddingBottom: =0
             Wrap: =false
             FontWeight: =FontWeight.Bold
-      - t_rRule:
+      - m_rStat:
+          Control: Label@2.5.1
+          Properties:
+            Text: =If(ThisItem.Mot < Today(), "EXPIRED", If(ThisItem.Mot < Today() + 30, "Book test now", If(ThisItem.Mot <= Today() + 60, "Book soon", "In date")))
+            X: =950
+            Y: =8
+            Width: =130
+            Height: =28
+            Size: =10
+            Color: =If(ThisItem.Mot < Today() + 30, RGBA(192, 57, 43, 1), If(ThisItem.Mot <= Today() + 60, RGBA(160, 106, 0, 1), RGBA(16, 124, 16, 1)))
+            Fill: =If(ThisItem.Mot < Today() + 30, RGBA(253, 226, 223, 1), If(ThisItem.Mot <= Today() + 60, RGBA(253, 240, 214, 1), RGBA(223, 243, 226, 1)))
+            Font: =Font.'Open Sans'
+            Align: =Align.Center
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - m_rRule:
           Control: Label@2.5.1
           Properties:
             Text: =""
