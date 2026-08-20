@@ -805,7 +805,7 @@
 - df_q2v:
     Control: Label@2.5.1
     Properties:
-      Text: =Text(CountRows(Filter(Defects, Status.Value = "Open", Severity.Value = "High")))
+      Text: =Text(CountRows(Filter(Defects, Status.Value = "Open", Severity.Value = "Safety Critical")))
       X: =524
       Y: =140
       Width: =240
@@ -827,7 +827,7 @@
 - df_q2k:
     Control: Label@2.5.1
     Properties:
-      Text: ="OPEN AND HIGH"
+      Text: ="OPEN AND SAFETY CRITICAL"
       X: =524
       Y: =174
       Width: =244
@@ -1234,7 +1234,7 @@
       - df_rVeh:
           Control: Label@2.5.1
           Properties:
-            Text: =ThisItem.Vehicles
+            Text: =ThisItem.Title
             X: =16
             Y: =0
             Width: =138
@@ -1325,8 +1325,8 @@
             Width: =100
             Height: =28
             Size: =10
-            Color: =If(ThisItem.Severity.Value = "High", RGBA(192, 57, 43, 1), If(ThisItem.Severity.Value = "Medium", RGBA(160, 106, 0, 1), RGBA(31, 90, 168, 1)))
-            Fill: =If(ThisItem.Severity.Value = "High", RGBA(253, 226, 223, 1), If(ThisItem.Severity.Value = "Medium", RGBA(253, 240, 214, 1), RGBA(222, 234, 250, 1)))
+            Color: =If(ThisItem.Severity.Value = "Safety Critical", RGBA(192, 57, 43, 1), If(ThisItem.Severity.Value = "Major", RGBA(160, 106, 0, 1), RGBA(31, 90, 168, 1)))
+            Fill: =If(ThisItem.Severity.Value = "Safety Critical", RGBA(253, 226, 223, 1), If(ThisItem.Severity.Value = "Major", RGBA(253, 240, 214, 1), RGBA(222, 234, 250, 1)))
             Font: =Font.'Open Sans'
             Align: =Align.Center
             VerticalAlign: =VerticalAlign.Middle
