@@ -454,7 +454,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrMOT)
+      OnSelect: =Navigate(scrMot)
 - dc_n6t:
     Control: Label@2.5.1
     Properties:
@@ -476,7 +476,7 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      OnSelect: =Navigate(scrMOT)
+      OnSelect: =Navigate(scrMot)
 - dc_n7b:
     Control: Label@2.5.1
     Properties:
