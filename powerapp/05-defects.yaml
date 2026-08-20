@@ -656,7 +656,7 @@
 - df_h2:
     Control: Label@2.5.1
     Properties:
-      Text: ="Driver defect reporting and repair sign-off"
+      Text: ="Every reported defect, newest first  live from the Defects list in Microsoft 365"
       X: =234
       Y: =100
       Width: =900
@@ -674,14 +674,14 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- df_pnl:
+- df_q1c:
     Control: Label@2.5.1
     Properties:
       Text: =""
       X: =234
       Y: =132
-      Width: =1104
-      Height: =612
+      Width: =264
+      Height: =76
       Size: =1
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(255, 255, 255, 1)
@@ -695,19 +695,19 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-- df_tag:
+- df_q1a:
     Control: Label@2.5.1
     Properties:
-      Text: ="COMING IN A LATER RELEASE"
-      X: =250
-      Y: =152
-      Width: =260
-      Height: =26
-      Size: =9
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(202, 163, 68, 1)
+      Text: =""
+      X: =234
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(192, 57, 43, 1)
       Font: =Font.'Open Sans'
-      Align: =Align.Center
+      Align: =Align.Left
       VerticalAlign: =VerticalAlign.Middle
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
@@ -716,17 +716,16 @@
       PaddingTop: =0
       PaddingBottom: =0
       Wrap: =false
-      FontWeight: =FontWeight.Bold
-- df_t:
+- df_q1v:
     Control: Label@2.5.1
     Properties:
-      Text: ="Defects"
-      X: =250
-      Y: =192
-      Width: =1070
-      Height: =40
-      Size: =22
-      Color: =RGBA(7, 29, 58, 1)
+      Text: =Text(CountRows(Filter(Defects, Status.Value = "Open")))
+      X: =248
+      Y: =140
+      Width: =240
+      Height: =34
+      Size: =24
+      Color: =RGBA(192, 57, 43, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -739,37 +738,80 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- df_s:
+- df_q1k:
     Control: Label@2.5.1
     Properties:
-      Text: ="A driver reports a defect from their phone, it lands on this screen, and the vehicle cannot go back out until the repair is signed off."
-      X: =250
-      Y: =238
-      Width: =900
-      Height: =60
-      Size: =13
+      Text: ="OPEN DEFECTS"
+      X: =248
+      Y: =174
+      Width: =244
+      Height: =20
+      Size: =9
       Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Top
+      VerticalAlign: =VerticalAlign.Middle
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
       PaddingLeft: =0
       PaddingRight: =0
       PaddingTop: =0
       PaddingBottom: =0
-      Wrap: =true
-- df_wt:
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_q2c:
     Control: Label@2.5.1
     Properties:
-      Text: ="What this screen will do"
-      X: =250
-      Y: =320
-      Width: =500
-      Height: =26
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
+      Text: =""
+      X: =510
+      Y: =132
+      Width: =264
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q2a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =510
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(192, 57, 43, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q2v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Defects, Status.Value = "Open", Severity.Value = "High")))
+      X: =524
+      Y: =140
+      Width: =240
+      Height: =34
+      Size: =24
+      Color: =RGBA(192, 57, 43, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
@@ -782,208 +824,19 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-- df_b0d:
+- df_q2k:
     Control: Label@2.5.1
     Properties:
-      Text: ="●"
-      X: =252
-      Y: =356
-      Width: =16
-      Height: =26
-      Size: =11
-      Color: =RGBA(202, 163, 68, 1)
+      Text: ="OPEN AND HIGH"
+      X: =524
+      Y: =174
+      Width: =244
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
       Fill: =RGBA(0, 0, 0, 0)
       Font: =Font.'Open Sans'
       Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b0t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Driver reports a defect  photo, description, severity"
-      X: =274
-      Y: =356
-      Width: =860
-      Height: =26
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b1d:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="●"
-      X: =252
-      Y: =390
-      Width: =16
-      Height: =26
-      Size: =11
-      Color: =RGBA(202, 163, 68, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b1t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Vehicle flags on the dashboard the moment it is reported"
-      X: =274
-      Y: =390
-      Width: =860
-      Height: =26
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b2d:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="●"
-      X: =252
-      Y: =424
-      Width: =16
-      Height: =26
-      Size: =11
-      Color: =RGBA(202, 163, 68, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b2t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Repair recorded against the vehicle with who signed it off"
-      X: =274
-      Y: =424
-      Width: =860
-      Height: =26
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b3d:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="●"
-      X: =252
-      Y: =458
-      Width: =16
-      Height: =26
-      Size: =11
-      Color: =RGBA(202, 163, 68, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_b3t:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Nothing can be closed without a sign-off name and date"
-      X: =274
-      Y: =458
-      Width: =860
-      Height: =26
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Middle
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =false
-- df_note:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="The four live screens above are running on your real Microsoft 365 data right now. This one is a placeholder so you can see exactly where it lands."
-      X: =250
-      Y: =520
-      Width: =860
-      Height: =40
-      Size: =10
-      Color: =RGBA(140, 152, 172, 1)
-      Fill: =RGBA(0, 0, 0, 0)
-      Font: =Font.'Open Sans'
-      Align: =Align.Left
-      VerticalAlign: =VerticalAlign.Top
-      BorderThickness: =0
-      BorderColor: =RGBA(201, 210, 222, 1)
-      PaddingLeft: =0
-      PaddingRight: =0
-      PaddingTop: =0
-      PaddingBottom: =0
-      Wrap: =true
-- df_btn:
-    Control: Label@2.5.1
-    Properties:
-      Text: ="Back to dashboard"
-      X: =250
-      Y: =576
-      Width: =260
-      Height: =40
-      Size: =12
-      Color: =RGBA(7, 29, 58, 1)
-      Fill: =RGBA(202, 163, 68, 1)
-      Font: =Font.'Open Sans'
-      Align: =Align.Center
       VerticalAlign: =VerticalAlign.Middle
       BorderThickness: =0
       BorderColor: =RGBA(201, 210, 222, 1)
@@ -993,4 +846,560 @@
       PaddingBottom: =0
       Wrap: =false
       FontWeight: =FontWeight.Bold
-      OnSelect: =Navigate(scrDash)
+- df_q3c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =786
+      Y: =132
+      Width: =264
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q3a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =786
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(160, 106, 0, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q3v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Defects, 'Date Reported' >= Date(Year(Today()), Month(Today()), 1))))
+      X: =800
+      Y: =140
+      Width: =240
+      Height: =34
+      Size: =24
+      Color: =RGBA(160, 106, 0, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_q3k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="REPORTED THIS MONTH"
+      X: =800
+      Y: =174
+      Width: =244
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_q4c:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =1062
+      Y: =132
+      Width: =264
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q4a:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =1062
+      Y: =132
+      Width: =4
+      Height: =76
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(16, 124, 16, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_q4v:
+    Control: Label@2.5.1
+    Properties:
+      Text: =Text(CountRows(Filter(Defects, Status.Value = "Closed")))
+      X: =1076
+      Y: =140
+      Width: =240
+      Height: =34
+      Size: =24
+      Color: =RGBA(16, 124, 16, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_q4k:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="CLOSED"
+      X: =1076
+      Y: =174
+      Width: =244
+      Height: =20
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_pnl:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =234
+      Y: =224
+      Width: =1104
+      Height: =520
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(255, 255, 255, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =1
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_hb:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =235
+      Y: =225
+      Width: =1102
+      Height: =34
+      Size: =1
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(246, 248, 251, 1)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+- df_hh0:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="VEHICLE"
+      X: =250
+      Y: =225
+      Width: =138
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh1:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="DEFECT"
+      X: =390
+      Y: =225
+      Width: =320
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh2:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="REPORTED BY"
+      X: =714
+      Y: =225
+      Width: =148
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh3:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="REPORTED"
+      X: =866
+      Y: =225
+      Width: =108
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh4:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="SEVERITY"
+      X: =978
+      Y: =225
+      Width: =108
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh5:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="STATUS"
+      X: =1090
+      Y: =225
+      Width: =118
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_hh6:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="DAYS OPEN"
+      X: =1212
+      Y: =225
+      Width: =110
+      Height: =34
+      Size: =9
+      Color: =RGBA(85, 98, 122, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+      Font: =Font.'Open Sans'
+      Align: =Align.Left
+      VerticalAlign: =VerticalAlign.Middle
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      PaddingLeft: =0
+      PaddingRight: =0
+      PaddingTop: =0
+      PaddingBottom: =0
+      Wrap: =false
+      FontWeight: =FontWeight.Bold
+- df_gal:
+    Control: Gallery@2.15.0
+    Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+    Properties:
+      Items: =Sort(Defects, 'Date Reported', SortOrder.Descending)
+      X: =235
+      Y: =259
+      Width: =1102
+      Height: =482
+      TemplateSize: =44
+      TemplatePadding: =0
+      ShowNavigation: =false
+      ShowScrollbar: =true
+      BorderThickness: =0
+      BorderColor: =RGBA(201, 210, 222, 1)
+      Fill: =RGBA(0, 0, 0, 0)
+    Children:
+      - df_rVeh:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.Vehicles
+            X: =16
+            Y: =0
+            Width: =138
+            Height: =44
+            Size: =12
+            Color: =RGBA(7, 29, 58, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - df_rDesc:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.'Defect Description'
+            X: =156
+            Y: =0
+            Width: =320
+            Height: =44
+            Size: =11
+            Color: =RGBA(7, 29, 58, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+      - df_rBy:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.'Reported By'
+            X: =480
+            Y: =0
+            Width: =148
+            Height: =44
+            Size: =11
+            Color: =RGBA(85, 98, 122, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+      - df_rWhen:
+          Control: Label@2.5.1
+          Properties:
+            Text: =Text(ThisItem.'Date Reported', "dd mmm yy")
+            X: =632
+            Y: =0
+            Width: =108
+            Height: =44
+            Size: =11
+            Color: =RGBA(85, 98, 122, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+      - df_rSev:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.Severity.Value
+            X: =744
+            Y: =8
+            Width: =100
+            Height: =28
+            Size: =10
+            Color: =If(ThisItem.Severity.Value = "High", RGBA(192, 57, 43, 1), If(ThisItem.Severity.Value = "Medium", RGBA(160, 106, 0, 1), RGBA(31, 90, 168, 1)))
+            Fill: =If(ThisItem.Severity.Value = "High", RGBA(253, 226, 223, 1), If(ThisItem.Severity.Value = "Medium", RGBA(253, 240, 214, 1), RGBA(222, 234, 250, 1)))
+            Font: =Font.'Open Sans'
+            Align: =Align.Center
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - df_rStat:
+          Control: Label@2.5.1
+          Properties:
+            Text: =ThisItem.Status.Value
+            X: =856
+            Y: =8
+            Width: =110
+            Height: =28
+            Size: =10
+            Color: =If(ThisItem.Status.Value = "Closed", RGBA(16, 124, 16, 1), If(ThisItem.Status.Value = "Open", RGBA(192, 57, 43, 1), RGBA(160, 106, 0, 1)))
+            Fill: =If(ThisItem.Status.Value = "Closed", RGBA(223, 243, 226, 1), If(ThisItem.Status.Value = "Open", RGBA(253, 226, 223, 1), RGBA(253, 240, 214, 1)))
+            Font: =Font.'Open Sans'
+            Align: =Align.Center
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - df_rDays:
+          Control: Label@2.5.1
+          Properties:
+            Text: =If(ThisItem.Status.Value = "Closed", "-", Text(DateDiff(ThisItem.'Date Reported', Today())) & "d")
+            X: =978
+            Y: =0
+            Width: =110
+            Height: =44
+            Size: =11
+            Color: =If(ThisItem.Status.Value = "Closed", RGBA(85, 98, 122, 1), If(DateDiff(ThisItem.'Date Reported', Today()) > 7, RGBA(192, 57, 43, 1), RGBA(7, 29, 58, 1)))
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
+            FontWeight: =FontWeight.Bold
+      - df_rRule:
+          Control: Label@2.5.1
+          Properties:
+            Text: =""
+            X: =0
+            Y: =43
+            Width: =1102
+            Height: =1
+            Size: =1
+            Color: =RGBA(85, 98, 122, 1)
+            Fill: =RGBA(233, 238, 245, 1)
+            Font: =Font.'Open Sans'
+            Align: =Align.Left
+            VerticalAlign: =VerticalAlign.Middle
+            BorderThickness: =0
+            BorderColor: =RGBA(201, 210, 222, 1)
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            Wrap: =false
